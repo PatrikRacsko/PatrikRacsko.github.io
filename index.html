@@ -22,12 +22,12 @@ layout: default
   {% else %}
     <span class="previous">Predošlá strana</span>
   {% endif %}
-  <span class="page_number ">
+  <span class="page_number">
     Strana: {{ paginator.page }} z {{ paginator.total_pages }}
   </span>
   {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path }}" class="next">Nasledujúca strana</a>
   {% else %}
-    <span class="next ">Nasledujúca strana</span>
+    <span class="next">Nasledujúca strana</span>
   {% endif %}
 </div>
