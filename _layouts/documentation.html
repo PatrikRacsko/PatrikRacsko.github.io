@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+{%- include head.html -%}
+<body>
+{%- include header.html -%}
+<main class="page-content">
+        {% for post in site.documentations %}
+        {% assign author = site.data.authors[post.author] %}
+            <div class="card">
+                <h1><a href="{{ post.url }}">{{ post.name }}</a></h1>
+                <p> <b>{{ post.title }} </b> </p>
+                <p class="author">
+                        <span class="date">{{ site.time | date_to_string }}</span>
+                        <a rel="author" href=" {{ author.url }}" title="{{ author.name }}">Publikované od: {{ author.name }} </a>
+                </p>
+            </div>
+    </div>
+{% endfor %}
+</main>
+{%- include footer.html -%}
+</body>
+</html>
+

@@ -43,6 +43,9 @@ collections:
   documentations:
     output: true
     permalink: /documentations/:path/
+  journals:
+    output: true
+    permalink: /journals/:path/
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

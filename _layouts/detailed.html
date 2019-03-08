@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{%- include head.html -%}
+{%- include header.html -%}
+{% assign author = site.data.authors[page.author] %}
+<body>
+<div class="container">
+  <div class="row">
+    <div class="column-66">
+      <img src="{{ page.image }}">
+    </div>
+    <div class="column-33">
+        <h1> {{ page.title }} </h1>
+        <p>
+            {{ page.content }}
+        </p>
+        <h2>Autor: {{ author.name }} </h2>
+    </div>
+  </div>
+</div>
+{%- include footer.html -%}
+</body>
