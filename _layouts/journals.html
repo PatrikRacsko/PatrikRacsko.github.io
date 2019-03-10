@@ -4,7 +4,9 @@
 <body>
      {%- include header.html -%}
     <h1>Objavené</h1>
+  <div class="rowJ">
     {% for post in site.journals %}
+    <div class="columnJ">
         <div class="thecard">
           <div class="card-img">
             <img src="{{ post.image }}">
@@ -14,7 +16,9 @@
             <a href="{{ post.url }}" ><h1> {{ post.title | smartify }} </h1></a>
           </div>
         </div>
+    </div>
     {% endfor%}
+  </div>
     <br>
     <hr>
     <h1>Neobjavené</h1>

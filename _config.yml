@@ -29,6 +29,7 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-youtube
+  - jekyll-maps
 paginate: 2
 paginate_path: /page:num/
 defaults:
